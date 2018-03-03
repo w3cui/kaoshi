@@ -12,7 +12,7 @@
     "dest": "./build/",
     "src": "./src/",
     "taskName": [
-      "dataoke"
+      "style"
     ],
     "images": [
       ".jpg",

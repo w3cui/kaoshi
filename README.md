@@ -1,8 +1,8 @@
-# 大淘客 static项目安装步骤
+# static项目安装步骤
 
 ### 初始化项目
 ```
-git clone http://gitlab.xiaochankeji.cn/dtkgroup/dtk_static_www.git
+git clone 
 1.安装淘宝镜像
 $ npm install -g cnpm --registry=https://registry.npm.taobao.org
 2.开始安装依赖

@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@import "../less_public/scaffolding.less";
+@import "../less_public/layout.less";
+.in_main{ background:#0e8865; min-height: 100%;}
+.in_tab_list{ 
+	padding-top: 15px;
+
+	li{ position:relative; background:#54c557; border-radius: 5px; margin-bottom: 15px; color: #fff; overflow: hidden; clear:both;
+		&>div:nth-child(1){ background:url(../common/images/in_03.png) no-repeat 10px bottom; height: 100px; .size(auto,75%); font-size: 16px; line-height: 40px; text-indent: 15px;}
+		&>div:nth-child(2){ line-height: 25px; padding: 10px 0;
+			.load{ color: #feff92;}
+		}
+		.tab_bk,.tab_xk{ position: absolute; top: 10px; right: -20px; width: 50px; padding-left: 20px; text-align: center; line-height: 25px; color: #54c557; border-radius: 60px; overflow: hidden;line-height: 999; 
+			background: url(../common/images/tab_03.png) no-repeat 5px center #feff92; background-size: auto 80%; height: 25px;
+		 }
+		.tab_xk{background-image: url(../common/images/tab_06.png);}
+		.tab_gouxuan{ position: absolute; right: -25px; bottom: -25px; border-radius: 80px; height: 50px; width: 50px; background:#0e8663; line-height: 25px; 
+			.iconfont{ font-style: 26px; color: #79ff7d; width: 30px; text-align: center; line-height: 30px; float: left;
+				&.icon-icon_wrong{ color: #ffa646;} 
+			}
+		 }
+
+		&:before,&:after{ content: ""; .p_r(absolute,5); left: -100px; top: -200px; z-index: 10; width: 70%; height: 400%; background:rgba(0,0,0,0.05); .rotate(20deg) }
+		&:after{ left: -50px;}
+		
+		&:nth-child(2){background:#54d27a;
+			&>div:nth-child(1){ background-image:url(../common/images/in_06.png)}
+		}
+		
+		&:nth-child(3){background:#5ad5a8;
+			&>div:nth-child(1){ background-image:url(../common/images/in_09.png)}
+		}
+
+		&:nth-child(4){background:#56d0b8;
+			&>div:nth-child(1){ background-image:url(../common/images/in_12.png)}
+		}
+
+		&:nth-child(5){background:#36b6ec;
+			&>div:nth-child(1){ background-image:url(../common/images/in_15.png)}
+		}
+
+		&:nth-child(6){background:#36b6ec;
+			&>div:nth-child(1){ background-image:url(../common/images/in_17.png)}
+		}
+
+		&:active{ background:#4aa78c;}
+
+	}
+}
