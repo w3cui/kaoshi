@@ -68,7 +68,7 @@
 
 // 按钮
 .btn {
-    display: inline-block;.b_r(4px);padding: 6px 12px;font-size: 14px;.p_r; overflow: hidden; text-align: center; white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation;
+    display: inline-block;.b_r(15px);padding: 6px 12px;font-size: 14px;.p_r; overflow: hidden; text-align: center; white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation;
     cursor: pointer;  -webkit-user-select: none;  -moz-user-select: none; -ms-user-select: none;    user-select: none; border:0;
     .animationHover;
     .iconfont{ padding-right: 3px;}
@@ -76,13 +76,13 @@
 }
 // 灰色
 .btn-default{
-	background: #eee; color: #666; 
+	background: #eee; color: #666; border:solid 1px #eee;
 	&:hover{ background: #ececec; color: #666;}
 }
 // 主色
 .btn-primary{
-	background: @col-main; color: #fff;
-	&:hover{ color: #fff; background: #b8161c;}
+	background: @col-main; color: #fff;border:solid 1px @col-main;
+	&:hover{ color: #fff; background: @col-main;}
 }
 
 

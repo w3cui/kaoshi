@@ -3,7 +3,7 @@
 @import "../less_public/layout.less";
 .in_main{ background:#0e8865; min-height: 100%;}
 .in_tab_list{ 
-	padding-top: 15px;
+	padding-top: 15px; padding-bottom: 15px;
 
 	li{ position:relative; background:#54c557; border-radius: 5px; margin-bottom: 15px; color: #fff; overflow: hidden; clear:both;
 		&>div:nth-child(1){ background:url(../common/images/in_03.png) no-repeat 10px bottom; height: 100px; .size(auto,75%); font-size: 16px; line-height: 40px; text-indent: 15px;}
@@ -47,3 +47,111 @@
 
 	}
 }
+
+.com_time{
+	line-height: 45px; text-align: right; height:45px; font-size: 14px;
+	.iconfont{ font-size: 22px; top: 2px; color: #2d8014;}
+}
+
+.que_h3{ height: 45px; text-align: center; line-height: 45px; position: relative;z-index: 0;
+	&:before{ 
+		content: ""; display: block; height: 1px; overflow: hidden;width: 100%; background:#b5b5b5; 
+		position: absolute;left: 0; top: 50%; z-index: 1;
+	}
+	span{background: #fff; font-size: 14px; padding: 0 5px; position: relative;z-index: 10;}
+}
+
+.que_tab~.layout_main { padding-bottom: 45px;}
+.que_list{ 
+	dt{ font-size: 16px; padding:20px 0;
+		span{ border:solid 1px #2d8014; color: #2d8014; padding:0 5px; border-radius: 5px; font-size: 12px;}
+	}
+	dd{ position: relative; padding:  0 0px 20px 20px; font-size: 14px; color: #333; 
+		input{ display: none; }
+		input ~ i{ position: absolute; border-radius: 50px; left: 0; width: 14px; height: 14px; display: block; top: 3px;
+			background:#fff; border:solid 1px #54b358; overflow: hidden;
+
+		}
+		input:checked ~ i{ background:#0e8a66; border:solid 2px #0e8a66;}
+	}
+}
+
+.que_tab{ z-index: 900; background: #fff; border-top: solid 1px #ccc; position: fixed; left: 0; bottom: 0; width: 100%;
+	&>.row>div{ line-height: 45px;height: 45px; font-size:14px;
+		a{font-size: 14px;}
+	}
+}
+
+.que_msg{ padding:10px 0 20px 0; line-height: 24px;}
+
+.que_tab_list{
+	position: fixed; display: none; bottom: 45px; padding: 10px 0; 
+	left: 0; width: 100%; z-index: 10; background: #fff; 
+	border-top: solid 1px #ccc; border-bottom: solid 1px #ddd;
+	a{ display: block; font-size: 14px; width: 30px; height: 30px; border-radius: 50px; line-height: 30px; 
+		text-align: center; border: solid #898989 1px; margin: auto;
+	 	&:hover,&.active{color: @col-main; border-color: @col-main; color: @col-main;}
+	 	&.yes{ color: @col-red; border-color: @col-red;}
+	 }
+	li{text-align: center; padding: 10px 0;}
+	&.active{ display: block;}
+}
+
+div.que_box{
+	background: url(../common/images/boxbg.png) no-repeat center top; 
+	background-size: 100% auto;
+	background-color: none;
+	box-shadow:none;
+	width: 280px; height: 300px; 
+	.que_box_cent{ margin-left: 5%; padding-top: 30px;
+		.msg{ text-align: center; padding-top: 50px; font-size: 14px; color: @col-main; line-height: 22px;
+			.iconfont{font-size: 60px; display: block; margin: auto auto 20px auto; color: @col-main;}
+		}
+		.que_box_btn{ padding-top: 20px; text-align: center;
+			a{ margin: 0 5px ; width: auto;	}
+		}
+	}
+
+}
+
+.info_tab{
+	background: url(../common/images/info_02.jpg) no-repeat center center;
+	background-size: 100% 100%;
+	p.img{ text-align: center; padding-top: 5%;
+		img{ border-radius: 200px; display: block; width: 50px; height: 50px; margin:auto;}
+		span{ color: #fff; font-size: 14px; line-height: 30px;}
+	}
+	.name{ text-align: center; font-size: 14px; line-height: 35px; padding-bottom: 10px;
+		.text{ color: #fff; border:solid 1px #fff; font-size: 14px; padding: 0 5px; border-radius: 5px;}
+		.vip{ color: #ffe400; font-weight: bold;}
+		.load{ width: 100px; display: inline-block; height: 10px;border-radius: 3px; border:solid 1px #a3e9a6; background: #fff;
+			span{ float: left; overflow: hidden; background: #ffc547; height: 10px;  }
+		}
+
+	}
+} 
+
+
+.info_tab_list{ padding-top: 15px;
+	li{.p_r; margin-bottom: 15px;
+		div.text{.p_a; left: 10%; top: 10%;
+			span{color: #fff;font-size: 14px;}
+		}
+		p.tab{ font-size: 24px; font-weight: bold; color: #fff;}
+
+		img{ width: 100%; display: block;}
+	}
+}
+
+.info_logo{ 
+	display: block; margin: auto; 
+	background: url(../common/images/info_logo.jpg) no-repeat center center; width:156px; height: 68px ;
+	background-size: 80% auto;
+}
+
+
+
+
+
+
+

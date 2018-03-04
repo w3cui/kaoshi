@@ -27,7 +27,7 @@ gulp 项目名称+Build  如大淘课：wwwBuild
 > $ npm install --global gulp
 
 
-# 大淘客 Web前端开发规范（初稿）
+# Web前端开发规范
 
 ### 规范目的
 
