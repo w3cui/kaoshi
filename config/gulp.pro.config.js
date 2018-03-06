@@ -58,7 +58,7 @@ let mod = (filename, pkg) => ({
 	},
 	// 发布命令绑定
 	dev(lwj) {
-		return [filename + "Push", (cb) => {
+		return [filename + "Build", (cb) => {
 			runSequence(filename + "Copy_css",filename + "All_less", [ "pluginCopy"], filename + "Minify", cb);
 		}];
 	},
