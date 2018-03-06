@@ -21,7 +21,7 @@
 }
 body,
 html {
-  background: #faf9f8;
+  background: #fff;
   word-wrap: break-word;
   white-space: normal;
   word-break: break-all;
@@ -181,10 +181,6 @@ a.col-main:hover {
   zoom: 1;
   vertical-align: middle;
   background: #fff;
-  max-width: auto;
-  text-align: left;
-  margin: auto;
-  max-width: 750px;
 }
 .icon_header > a {
   position: absolute;
@@ -1843,4 +1839,145 @@ div.que_box .que_box_cent .que_box_btn a {
   width: 156px;
   height: 68px ;
   background-size: 80% auto;
+}
+.pw_info {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  zoom: 1;
+}
+.pw_info .text {
+  position: absolute;
+  font-size: 14px;
+  width: 100%;
+  color: #fff;
+  text-align: right;
+  left: 0;
+  top: 50%;
+  margin-top: -15px;
+  line-height: 30px;
+}
+.pw_info .text span {
+  font-size: 28px;
+  padding-right: 30px;
+}
+.pw_info img {
+  width: 100%;
+  display: block;
+}
+.pw_info_list {
+  padding: 10px 0 50px 0;
+}
+.pw_info_list li a {
+  display: block;
+  margin: 0 5px 10px 5px;
+  border-radius: 5px;
+  color: #fff;
+  background: url(../common/images/in_03.png) no-repeat 60px bottom #4bb04e;
+  background-size: 70% auto;
+  height: 100px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+.pw_info_list li a .text {
+  padding: 10px ;
+}
+.pw_info_list li a .tab {
+  font-size: 16px;
+}
+.pw_info_list li.li2 a {
+  background-image: url(../common/images/in_06.png);
+  background-color: #37c763;
+}
+.pw_info_list li.li3 a {
+  background-image: url(../common/images/in_09.png);
+  background-color: #43cb90;
+}
+.pw_info_list li.li4 a {
+  background-image: url(../common/images/in_12.png);
+  background-color: #3dc4a9;
+}
+.pw_info_list li.li5 a {
+  background-image: url(../common/images/in_15.png);
+  background-color: #1bc5df;
+}
+.pw_info_list li.li6 a {
+  background-image: url(../common/images/in_17.png);
+  background-color: #1ba5df;
+}
+.pw_bg {
+  background: url(../common/images/pw_bg.jpg) #0e8966 no-repeat left top;
+  background-size: 100% auto;
+}
+.pw_tab_list {
+  padding-top: 10px;
+}
+.pw_tab_list .pw_btn {
+  display: block;
+  background: -moz-linear-gradient(top, #5bca6e 0%, #64c049 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5bca6e), color-stop(100%, #64c049));
+  background: -webkit-linear-gradient(top, #5bca6e 0%, #64c049 100%);
+  background: -o-linear-gradient(top, #5bca6e 0%, #64c049 100%);
+  background: -ms-linear-gradient(top, #5bca6e 0%, #64c049 100%);
+  background: linear-gradient(to bottom, #5bca6e 0%, #64c049 100%);
+  border-radius: 10px;
+  padding: 3px 0;
+  width: 60%;
+  margin: 40%  auto 10px auto;
+}
+.pw_tab_list .pw_btn b {
+  border-radius: 7px;
+  text-align: center;
+  display: block;
+  margin: 0 3px;
+  background: #4caf50;
+  color: #feff92;
+  font-size: 20px;
+  padding: 0 5px;
+}
+.pw_tab_list .nr {
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+}
+.pw_tab_list .text {
+  padding-top: 15px;
+  position: relative;
+  top: 20px;
+  color: #fff;
+  font-size: 12px;
+}
+.pw_tab_list .text span {
+  display: inline-block;
+  border: solid 1px #4fb555;
+  border-radius: 15px;
+  padding: 0px 10px;
+  color: #fff;
+}
+.pw_tab_list .text span.active {
+  background: #4fb555;
+}
+.pw_tab_list li {
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 5;
+}
+.pw_tab_list li img {
+  width: 100%;
+  display: block;
+}
+.pw_tab_list li .center {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: block;
+}
+.pw_tab_list li.li2 .l {
+  position: relative;
+  left: 10%;
+}
+.pw_tab_list li.li2 .l span {
+  border-color: #38b791;
+}
+.pw_tab_list li.li2 .l span.active {
+  background: #38b791;
 }
