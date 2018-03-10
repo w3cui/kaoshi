@@ -78,7 +78,9 @@
 
 .que_tab{ z-index: 900; background: #fff; border-top: solid 1px #ccc; position: fixed; left: 0; bottom: 0; width: 100%;
 	&>.row>div{ line-height: 45px;height: 45px; font-size:14px;
-		a{font-size: 14px;}
+		a{font-size: 14px;
+			.iconfont{ font-size: 18px;}
+		}
 	}
 }
 
@@ -354,4 +356,23 @@ div.que_box{
 		}
 	}
 
+}
+
+
+.exa_bg{
+	.que_list dt{ color: #fff;}
+	.que_list dt span{ border-color: #71ffc1; color: #71ffc1;}
+	.que_list dd{ color:#fff;}
+	.que_list dd input:checked ~ i {
+	    background: #fa8a3f;
+	}
+	.exa_time_tab{ position: relative; height: 130px; .size(70%,auto);}
+	.exa_time span{ margin-top: -28px;}
+
+	.que_load{ margin-bottom: 50px; top: 15px; height: 10px; position: relative; border-radius: 50px; background: #fff; position: relative;z-index: 5;
+		p{ background: #4add9d; float: left; border-radius: 10px; position: relative;z-index: 2; height: 10px; 
+			span{ position:absolute; right: 0; bottom: -25px; line-height: 25px; color: #fff; font-size: 12px;}
+		}
+		i{ font-style: normal;  position:absolute; right: 0; bottom: -25px; line-height: 25px; color: #fff; font-size: 12px;}
+	}
 }

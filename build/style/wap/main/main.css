@@ -1842,3 +1842,60 @@ div.que_box .que_box_cent .que_box_btn a {
 .exa_msg.no div.cent div.text {
   color: #a5a5a5;
 }
+.exa_bg .que_list dt {
+  color: #fff;
+}
+.exa_bg .que_list dt span {
+  border-color: #71ffc1;
+  color: #71ffc1;
+}
+.exa_bg .que_list dd {
+  color: #fff;
+}
+.exa_bg .que_list dd input:checked ~ i {
+  background: #fa8a3f;
+}
+.exa_bg .exa_time_tab {
+  position: relative;
+  height: 130px;
+  -webkit-background-size: 70% auto;
+  -moz-background-size: 70% auto;
+  background-size: 70% auto;
+}
+.exa_bg .exa_time span {
+  margin-top: -28px;
+}
+.exa_bg .que_load {
+  margin-bottom: 50px;
+  top: 15px;
+  height: 10px;
+  border-radius: 50px;
+  background: #fff;
+  position: relative;
+  z-index: 5;
+}
+.exa_bg .que_load p {
+  background: #4add9d;
+  float: left;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+  height: 10px;
+}
+.exa_bg .que_load p span {
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+  line-height: 25px;
+  color: #fff;
+  font-size: 12px;
+}
+.exa_bg .que_load i {
+  font-style: normal;
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+  line-height: 25px;
+  color: #fff;
+  font-size: 12px;
+}
