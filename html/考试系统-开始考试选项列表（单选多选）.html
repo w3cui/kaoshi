@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../build/style/wap/common/common.css"/>
+        <link rel="stylesheet" type="text/css" href="../build/style/wap/main/main.css"/>
+	</head>
+	<body>
+		<div class="header_pr">
+	        <header class="icon_header">
+	            <a class="iconfont icon-zuo" href="javascript:window.history.go(-1);"></a>
+	            <div>考试模拟</div>	            
+	        </header>
+	    </div>
+		<div class="header_bg"></div>
+		<!-- 注意 que_tab 必须放在 layout_main 标签上面不能移动位置 -->
+		<div class="que_tab">
+			<div class="row">
+				<div class="col-6 text-left">
+					<a href="">
+						<i class="iconfont icon-wenjuan col-green"></i>
+						交卷
+					</a>
+				</div>
+				<div class="col-2 text-right">
+					<a href="" class="col-green">
+						<i class="iconfont icon-wenjuan"></i>
+						23
+					</a>
+				</div>	
+
+				<div class="col-2 text-right">
+					<a href="" class="col-red">
+						<i class="iconfont icon-wenjuan"></i>
+						7
+					</a>
+				</div>	
+
+				<div class="col-2 text-right">
+						<b class="col-green">4</b>/12
+				</div>	
+			</div>
+			<!-- 列表加上 “active” 就会显示列表 -->
+			<ul class="que_tab_list row active">
+				<li class="col-2">
+					<a href="" class="active">1</a>
+				</li>
+				<li class="col-2">
+					<a href="" class="yes">2</a>
+				</li>
+				<li class="col-2">
+					<a href="">3</a>
+				</li>
+				<li class="col-2">
+					<a href="">4</a>
+				</li>
+				<li class="col-2">
+					<a href="">5</a>
+				</li>
+				<li class="col-2">
+					<a href="">7</a>
+				</li>
+				<li class="col-2">
+					<a href="">6</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="layout_main">
+			<div class="com_time col-mar">
+				<i class="iconfont icon-ai254"></i>倒计时 00:60
+			</div>
+
+			<dl class="que_list col-mar">
+				<dt>10.下列对三聚氰胺饰面板说法不正确的一项是 <span>单选</span></dt>
+				<dd><label><input type="checkbox" name=""><i></i>A.三聚氰胺饰面板在家具使用板材幅面多1200*2400mm，厚度多为12mm、16mm、18mm，其他5mm、8mm用作背板</label></dd>
+				<dd><label><input type="checkbox" name=""><i></i>A.三聚氰胺饰面板在家具使用板材幅面多1200*2400mm，厚度多为12mm、16mm、18mm，其他5mm、8mm用作背板</label></dd>
+				<dd><label><input type="checkbox" name=""><i></i>A.三聚氰胺饰面板在家具使用板材幅面多1200*2400mm，厚度多为12mm、16mm、18mm，其他5mm、8mm用作背板</label></dd>
+				<dd><label><input type="checkbox" name=""><i></i>A.三聚氰胺饰面板在家具使用板材幅面多1200*2400mm，厚度多为12mm、16mm、18mm，其他5mm、8mm用作背板</label></dd>
+			</dl>
+			<h3 class="que_h3">
+				<span>问题解析</span>
+			</h3>
+			<div class="que_msg col-mar">
+				答案：B <br>
+原因：三聚氰胺饰面板，俗称双饰面板、免漆板、生态板、饰面板、三聚氰胺板、3N 板，英文缩写 MFC，以刨花板、纤维板等人造板为基材，以浸渍胶膜纸饰为面材料的装饰板材
+			</div>
+
+
+
+		</div>
+
+		
+
+	</body>
+</html>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/layer/3.0.3/layer.min.js"></script>
+<script type="text/javascript" src="../build/style/wap/common/common.js"></script>
+
+<script type="text/javascript">
+	var htmltpl = '<div class="que_box_cent">'+
+		'<div class="msg col-mar"><i class="iconfont icon-wenjian"></i>确定交卷吗？<br/> 交卷后您的成绩将会自动提交</div>'+
+		'<div class="que_box_btn row  col-mar">'+
+			'<div class="col-6"><a class="btn btn-outline btn-outpri btn-block">确定</a></div>'+
+			'<div class="col-6"><a class="btn btn-primary btn-block">继续答题</a></div>'+
+		'</div>'+
+
+	'</div>';
+	layer.open({
+	  type: 1,
+	  title: false,
+	  closeBtn: 0,
+	  shadeClose: true,
+	  skin: 'que_box',
+	  content: htmltpl
+	});
+</script>

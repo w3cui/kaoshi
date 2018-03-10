@@ -21,7 +21,6 @@
 }
 body,
 html {
-  background: #fff;
   word-wrap: break-word;
   white-space: normal;
   word-break: break-all;
@@ -511,11 +510,6 @@ a.col-main:hover {
 }
 .layout_main {
   margin: 0px auto;
-  position: relative;
-  z-index: 5;
-  left: 0;
-  top: 0;
-  zoom: 1;
   text-align: left;
   max-width: 750px;
 }
@@ -770,6 +764,7 @@ a.col-main:hover {
 .btn-outline:hover {
   color: #4caf50;
   border: solid 1px #4caf50;
+  background: none;
 }
 .btn-outpri {
   background: none;
@@ -797,200 +792,6 @@ a.col-main:hover {
   padding-right: 0;
   display: block;
   width: 100%;
-}
-.icon_imglist {
-  width: 102%;
-  padding-top: 20px;
-}
-.icon_imglist li {
-  float: left;
-  width: 18.5%;
-  margin-bottom: 15px;
-  margin-right: 1.4%;
-}
-.icon_imglist li div.cent {
-  background: #fff;
-  padding-bottom: 10px;
-  position: relative;
-  z-index: 1;
-  zoom: 1;
-}
-.icon_imglist li div.cent a {
-  display: block;
-  text-align: center;
-  transition: all 400ms ease-out 0s;
-  -o-transition: all 400ms ease-out 0s;
-  -moz-transition: all 400ms ease-out 0s;
-  -webkit-transition: all 400ms ease-out 0s;
-  transform-origin: center;
-}
-.icon_imglist li div.cent a.img {
-  margin: 0px 10px;
-  padding-top: 10px;
-}
-.icon_imglist li div.cent a.img img {
-  width: 100%;
-}
-.icon_imglist li div.cent a.bt {
-  font-size: 14px;
-  line-height: 26px;
-  height: 26px;
-  overflow: hidden;
-}
-.icon_imglist li div.cent .money {
-  color: #4caf50;
-  font-size: 16px;
-  text-align: center;
-}
-.icon_imglist li div.cent .money span {
-  font-size: 16px;
-}
-.icon_imglist li div.cent:hover {
-  -moz-box-shadow: 2px 2px 10px #eee;
-  -webkit-box-shadow: 2px 2px 10px #eee;
-  box-shadow: 2px 2px 10px #eee;
-}
-.icon_imglist li div.cent:hover a.img {
-  -khtml-opacity: 0.9;
-  -moz-opacity: 0.9;
-  opacity: 0.9;
-  filter: alpha(opacity=90);
-}
-.icon_imglist li div.cent .but {
-  position: absolute;
-  z-index: 1;
-  zoom: 1;
-  top: 0;
-  left: 10px;
-}
-.icon_imglist02 li {
-  clear: both;
-  background: #fff;
-  position: relative;
-  z-index: 1;
-  zoom: 1;
-}
-.icon_imglist02 li div.fl {
-  margin-left: 3%;
-  position: relative;
-  z-index: 1;
-  zoom: 1;
-  font-size: 14px;
-}
-.icon_imglist02 li div.div01 {
-  width: 25%;
-}
-.icon_imglist02 li div.div02 {
-  width: 12.5%;
-}
-.icon_imglist02 li div.div03 {
-  width: 15%;
-}
-.icon_imglist02 li div.div04 {
-  width: 15%;
-}
-.icon_imglist02 li div.div05 {
-  width: 15%;
-}
-.icon_imglist02 li div.div05 .but {
-  position: absolute;
-  z-index: 1;
-  zoom: 1;
-  top: -4px;
-  left: -60px;
-}
-.icon_imglist02 li.tab {
-  height: 50px;
-  line-height: 50px;
-  background: #f4f4f4;
-}
-.icon_imglist02 li.odd {
-  background: #f4f4f4;
-}
-.icon_imglist02 li.list {
-  padding: 15px 0;
-}
-.icon_imglist02 li.list div.fl {
-  line-height: 38px;
-}
-.icon_imglist02 li.list div.div01 {
-  line-height: 19px;
-}
-.icon_imglist03 li.tab {
-  height: 50px;
-  font-size: 14px;
-  line-height: 50px;
-  background: #f4f4f4;
-  text-align: center;
-}
-.icon_imglist03 li.odd {
-  background: #f4f4f4;
-}
-.icon_imglist03 li.list {
-  padding: 15px 0;
-  font-size: 14px;
-}
-.icon_imglist03 li.list p.link {
-  margin: 0 20px;
-  display: inline-block;
-  line-height: 31px;
-}
-.icon_imglist03 li.list p.link a:hover {
-  text-decoration: underline;
-}
-.icon_imglist03 li.list .text-cent {
-  line-height: 31px;
-}
-.icon_imglist03 li.list .icon_cal {
-  height: 31px;
-  line-height: 31px;
-  margin-right: 5px;
-  width: 110px;
-}
-.icon_imglist03 li.list .icon_cal input,
-.icon_imglist03 li.list .icon_cal a {
-  height: 31px;
-}
-.icon_imglist03 li.list .icon_cal input {
-  width: 48px;
-}
-.icon_imglist03 li.list .but {
-  width: 180px;
-  margin: auto;
-}
-.icon_paging_tow {
-  text-align: center;
-  height: 50px;
-}
-.icon_paging_tow a {
-  display: inline-block;
-  background: #fff;
-  color: #333;
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-  z-index: 5;
-  zoom: 1;
-  border: solid 1px #d7d7d6;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  margin-right: 5px;
-}
-.icon_paging_tow a:hover,
-.icon_paging_tow a.ayes {
-  color: #4caf50;
-  border-color: #4caf50;
-}
-.icon_paging_tow a.page,
-.icon_paging_tow a.down {
-  font-family: "宋体";
-}
-.icon_paging_tow span {
-  height: 22px;
-  padding: 0px 5px;
-  display: inline-block;
-  line-height: 22px;
 }
 .pagination {
   height: 50px;
@@ -1112,28 +913,6 @@ a.col-main:hover {
   background: #e4e4e4;
   border: 0;
 }
-.icon_share {
-  height: 50px;
-  line-height: 50px;
-}
-.icon_share span.fl {
-  font-size: 14px;
-}
-.icon_share .iconfont {
-  float: left;
-  font-size: 40px;
-  margin-right: 10px;
-  cursor: pointer;
-}
-.icon_share .icon-weibo {
-  color: #eecf3d;
-}
-.icon_share .icon-kongjian {
-  color: #3eb135;
-}
-.icon_share .icon-weixin1 {
-  color: #ff8b19;
-}
 .layui-layer-share .share-list {
   text-align: center;
   padding: 30px 0;
@@ -1154,183 +933,6 @@ a.col-main:hover {
 }
 .layui-layer-share .share-list .icon-weixin1 {
   color: #ff8b19;
-}
-.icon_input {
-  border: solid 1px #ccc;
-  width: 100%;
-  display: block;
-  background: #fff;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  padding: 10px 0;
-  text-indent: .5em;
-  font-size: 14px;
-  color: #333;
-}
-.icon_input:focus {
-  color: #666;
-}
-.icon_input:hover {
-  border-color: #bbb;
-}
-span.icon_input,
-span.icon_input:hover {
-  border-color: #eee;
-  color: #999;
-}
-.icon_input_none {
-  color: #4caf50;
-  border-color: #4caf50;
-}
-input[ui-laydate] {
-  background: url(../common/images/input_time.png) right bottom no-repeat;
-}
-p.icon_input_none {
-  height: 22px;
-  line-height: 22px;
-}
-.input_min {
-  padding: 5px 0;
-}
-.icon_nodata {
-  font-size: 14px;
-  padding: 200px;
-  text-align: center;
-}
-.icon_nodata .iconfont {
-  font-size: 50px;
-  padding-bottom: 15px;
-  display: block;
-  margin: auto;
-  color: #999;
-  background: url(../common/images/icon-nodata.png) bottom center no-repeat;
-}
-.icon_nodata p.text {
-  color: #999;
-  line-height: 25px;
-}
-.icon_form,
-.icon_form_show {
-  width: 100%;
-}
-.icon_form li,
-.icon_form_show li {
-  position: relative;
-  z-index: 1;
-  zoom: 1;
-  margin-bottom: 20px;
-  width: 100%;
-}
-.icon_form div.text,
-.icon_form_show div.text,
-.icon_form div.textfl,
-.icon_form_show div.textfl {
-  width: 110px;
-  float: left;
-  text-align: right;
-  line-height: 38px;
-  font-size: 14px;
-}
-.icon_form div.text i,
-.icon_form_show div.text i,
-.icon_form div.textfl i,
-.icon_form_show div.textfl i {
-  color: #4caf50;
-  font-style: normal;
-}
-.icon_form .show_text,
-.icon_form_show .show_text {
-  line-height: 38px;
-  float: left;
-  padding: 0 0 0 45px;
-  font-size: 14px;
-}
-.icon_form .show_text i,
-.icon_form_show .show_text i {
-  color: #4caf50;
-  font-style: normal;
-}
-.icon_form div.textfl,
-.icon_form_show div.textfl {
-  position: relative;
-  z-index: 1;
-  zoom: 1;
-  padding-right: 10px;
-}
-.icon_form div.inputtext,
-.icon_form_show div.inputtext {
-  margin: 0px 20px 0px 0px;
-  float: left;
-  position: relative;
-  z-index: 1;
-  zoom: 1;
-}
-.icon_form div.inputtext p.icon_input_none,
-.icon_form_show div.inputtext p.icon_input_none {
-  bottom: -20px;
-  position: absolute;
-  z-index: 1;
-  zoom: 1;
-}
-.icon_form label,
-.icon_form_show label {
-  line-height: 38px;
-  display: inline-block;
-  padding-right: 10px;
-}
-.icon_form label input,
-.icon_form_show label input {
-  float: left;
-  position: relative;
-  z-index: 1;
-  zoom: 1;
-  top: 13px;
-  margin-right: 5px;
-}
-.icon_form .row .icon_input,
-.icon_form_show .row .icon_input {
-  width: 95%;
-}
-.icon_form .upimgbut,
-.icon_form_show .upimgbut {
-  width: 98px;
-  height: 98px;
-  display: inline-block;
-  text-align: center;
-  line-height: 98px;
-  border: solid 1px #ccc;
-  font-size: 50px;
-  color: #ccc;
-}
-.icon_form_show li {
-  margin-bottom: 5px;
-  color: #555;
-}
-.icon_form_show .list_img {
-  padding-left: 45px;
-  padding-bottom: 10px;
-}
-.icon_form_show .list_img .list {
-  float: left;
-  margin-right: 20px;
-}
-.icon_form_show .list_img .list span.fl {
-  font-size: 14px;
-}
-.icon_form_show .list_img .list a.img {
-  float: left;
-  width: 96px;
-  height: 96px;
-  overflow: hidden;
-  background: #eee;
-}
-.icon_form_show .list_img .list a.img img {
-  width: 100%;
-  height: 100%;
-  display: block;
 }
 .defaultMsg {
   text-align: center;
@@ -1906,7 +1508,7 @@ div.que_box .que_box_cent .que_box_btn a {
 }
 .pw_bg {
   background: url(../common/images/pw_bg.jpg) #0e8966 no-repeat left top;
-  background-size: 100% auto;
+  background-size: 100% 100%;
 }
 .pw_tab_list {
   padding-top: 10px;
@@ -2070,7 +1672,7 @@ div.que_box .que_box_cent .que_box_btn a {
 }
 .pw_ph_list .btn {
   position: absolute;
-  right: 0;
+  right: 10px;
   top: 50%;
   margin-top: -15px;
   background-color: #fff;
@@ -2083,4 +1685,160 @@ div.que_box .que_box_cent .que_box_btn a {
   font-size: 14px;
   float: right;
   font-weight: 600;
+}
+.exa_bg {
+  background: url(../common/images/exabg_02.jpg) center top repeat-y;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  background-size: 100% auto;
+}
+.exa_time {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 50;
+  background: url(../common/images/exa_time_02.png) center center no-repeat;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  background-size: 100% auto;
+}
+.exa_time span {
+  position: absolute;
+  margin: -20px 0 0 -40px;
+  text-align: center;
+  top: 50%;
+  width: 80px;
+  left: 50%;
+  height: 80px;
+  line-height: 80px;
+  color: #fff;
+  font-size: 40px;
+  text-shadow: 4px 0px 0 rgba(0, 0, 0, 0.2);
+  font-family: "Arial";
+}
+.exa_h1 {
+  line-height: 45px;
+  color: #fff;
+  font-style: 18px;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 30px 0 10px 0;
+}
+.exa_tiem_tab span {
+  border: solid 1px #fff;
+  border-radius: 50px;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 2px 15px;
+  color: #fff;
+  font-size: 15px;
+}
+.exa_tab_time {
+  padding: 30px 0 10px 0;
+  text-align: center;
+}
+.exa_tab_time span {
+  display: inline-block;
+  height: 45px;
+  background: url(../common/images/time_lz.png) left center no-repeat;
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  background-size: auto 100%;
+  color: #fff;
+  padding-left: 60px;
+  line-height: 50px;
+  font-size: 14px;
+}
+.exa_cent_text {
+  background: url(../common/images/boxbg2.png) no-repeat center top;
+  background-size: 100% auto;
+  background-color: none;
+  box-shadow: none;
+  width: 300px;
+  height: 330px;
+  margin: auto;
+}
+.exa_cent_text .cent {
+  margin-left: 5%;
+  padding-top: 30px;
+  color: #444;
+}
+.exa_cent_text .cent dt {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 38px;
+  margin: 0px 15px;
+  padding-top: 30px;
+}
+.exa_cent_text .cent dd {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0px 15px;
+}
+.exa_btn .btn {
+  border-radius: 60px;
+}
+.exa_msg {
+  width: 70%;
+  margin: auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px 0;
+  position: relative;
+  z-index: 5;
+  top: 180px;
+}
+.exa_msg div.cent {
+  position: relative;
+  margin: 0 10px;
+  border-radius: 7px;
+  background: #ffcb48;
+}
+.exa_msg div.cent div.text {
+  font-size: 16px;
+  line-height: 30px;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  padding: 30px 0 10px 0;
+}
+.exa_msg div.cent a.btn {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto 15px auto;
+  width: 40%;
+}
+.exa_msg .exa_icon {
+  width: 80px;
+  position: absolute;
+  z-index: 1;
+  zoom: 1;
+  top: -60px;
+  left: 50%;
+  margin-left: -40px;
+  display: block;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background: url(../common/images/exa_msg_tab.png);
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+.exa_msg.pw div.cent {
+  background: #fff;
+}
+.exa_msg.pw div.cent div.text {
+  color: #333;
+}
+.exa_msg.no .exa_icon {
+  background-image: url(../common/images/exa_msg_no.png);
+}
+.exa_msg.no div.cent {
+  background: #eaeaea;
+}
+.exa_msg.no div.cent div.text {
+  color: #a5a5a5;
 }

@@ -204,7 +204,7 @@ div.que_box{
 
 .pw_bg{
 	background:url(../common/images/pw_bg.jpg) #0e8966 no-repeat  left top ;
-	background-size: 100% auto;
+	background-size: 100% 100%;
 }
 
 .pw_tab_list{padding-top: 10px;
@@ -284,13 +284,74 @@ div.que_box{
 	img{ width: 50px; height: 50px; margin-right: 10px; border-radius: 50px; border:solid 4px #fff;}
 	.bt{ float: left; font-size: 14px; line-height: 58px; height: 58px;}
 	.btn{
-		position: absolute; right: 0; top: 50%; margin-top: -15px;
+		position: absolute; right: 10px; top: 50%; margin-top: -15px;
 	 background-color: #fff; border-radius: 50px; line-height: 30px; padding: 0; text-align: center;height: 30px; width: 30px; font-size: 14px; float: right; font-weight:600;}
 
 
 }
 
+.exa_bg{background: url(../common/images/exabg_02.jpg) center top repeat-y; .size(100%,auto);}
 
 
+.exa_time{ 
+	position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 50;
+	background: url(../common/images/exa_time_02.png) center center no-repeat;
+	.size(100%,auto);
+	span{ position: absolute; top: 50%; 
+		margin: -20px 0 0 -40px; text-align: center; top: 50%; width: 80px; left: 50%; height: 80px; line-height: 80px; color: #fff; 
+		font-size: 40px; text-shadow: 4px 0px 0 rgba(0,0,0,.2); font-family:"Arial";}
 
+}
 
+.exa_h1{ line-height: 45px; color: #fff; font-style: 18px; text-shadow: 3px 3px 0 rgba(0,0,0,.2); text-align: center; padding: 30px 0 10px 0;}
+
+.exa_tiem_tab span{ border:solid 1px #fff; border-radius: 50px; display:inline-block; margin: 0 10px; padding: 2px 15px; color: #fff; font-size:15px; }
+
+.exa_tab_time{ padding:30px 0 10px 0; text-align: center;
+	span{ display: inline-block;height: 45px; background: url(../common/images/time_lz.png) left center no-repeat; .size(auto,100%);
+		color: #fff; padding-left: 60px; line-height: 50px; font-size: 14px;
+	} 
+ }
+
+.exa_cent_text{
+	background: url(../common/images/boxbg2.png) no-repeat center top; 
+	background-size: 100% auto;
+	background-color: none;
+	box-shadow:none;
+	width: 300px; height: 330px; 
+	margin: auto;
+	.cent{ margin-left: 5%; padding-top: 30px; color: #444; 
+		dt{ font-size: 16px;font-weight: 600; line-height: 38px; .col-mar; padding-top: 30px;}
+		dd{ font-size: 14px; line-height: 24px; .col-mar;}
+	}
+}
+
+.exa_btn{
+	.btn{ border-radius:60px;}
+}
+
+.exa_msg{
+	width: 70%; margin: auto; background: #fff; border-radius: 10px; padding: 10px 0; position: relative;z-index: 5; top: 180px;
+	div.cent{position:relative; margin: 0 10px; border-radius: 7px; background: #ffcb48;
+		div.text{ font-size: 16px; line-height: 30px; color: #fff; font-weight: 600; text-align: center; padding: 30px 0 10px 0;}
+		a.btn{padding-left:30px; padding-right: 30px; margin:0 auto 15px auto; width: 40%;}
+
+	}
+	.exa_icon{
+		width: 80px; .p_a; top: -60px; left: 50%; margin-left: -40px; display: block; height: 80px; line-height: 80px; text-align: center; background: url(../common/images/exa_msg_tab.png); .size(100%,100%);
+	}
+	
+	&.pw{
+		div.cent{ background: #fff;
+			div.text{ color: #333;}
+		}
+	}
+
+	&.no{
+		.exa_icon{ background-image: url(../common/images/exa_msg_no.png);}
+		div.cent{ background: #eaeaea;
+			div.text{ color: #a5a5a5;}
+		}
+	}
+
+}
