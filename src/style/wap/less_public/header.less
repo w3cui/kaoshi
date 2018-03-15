@@ -3,7 +3,7 @@
     .header_pr{.transform(0); .p_r(fixed,100); left: 0px; top: 0px;  width: 100%;border-bottom: solid 1px @BorderColor;}
     .header_pr:nth-child(2){ z-index: 99;}
     .header_bg{ height: 46px;}
-    .icon_header{ .w_h(100%,45px); line-height: 45px; .p_r(relative,5); vertical-align:middle; background: @HeaderBg; 
+    .icon_header,.header_adr div.icon_header{ .w_h(100%,45px); line-height: 45px; .p_r(relative,5); vertical-align:middle; background: @HeaderBg; 
         &>a{.p_r(absolute,5);  top: 0px;  .w_h(45px,45px);vertical-align:middle; text-align: center;color: @IconFontColor;
             font-size:1.29rem;
             &.icon-caidan{
@@ -24,7 +24,7 @@
         &>a:nth-child(3).headerinf{ overflow: hidden; .w_h(35px,35px); .b_r(45px); right: 10px; top: 5px; left: auto;
             img{.w_h(35px,35px); }
         }
-        &>div{ text-align: center; font-size: 16px; color: @IconFontColor;  .p_r(relative,2);.ov_ell; background: @HeaderBg;
+        &>div{ text-align: center; font-size: 16px; color: @IconFontColor;  .p_r(relative,10);.ov_ell; background: @HeaderBg;
             &.search{padding-top: 8px; margin:0 45px; }
             .logo{ line-height: 9999; overflow: hidden; height: 45px; background: url(../main/images/login_home.png) no-repeat center center; .size(auto,100%); }
         }

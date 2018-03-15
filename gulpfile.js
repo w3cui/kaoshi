@@ -70,7 +70,7 @@ var lwj = {
 				.pipe(less({
 					compress: lwj.compress
 				}))
-				//.pipe(minifycss())
+				.pipe(minifycss())
 				.pipe(header.apply(null, lwj.note))
 				.on('error', (e) => {
 					console.log(e);
